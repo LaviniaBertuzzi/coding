@@ -70,7 +70,9 @@ extension CollectionViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let item = viewModel.items[safe: indexPath.row] else {
-            return UICollectionViewCell()
+            let cell = UICollectionViewCell()
+            cell.contentView.backgroundColor = .red
+            return cell
         }
         return collectionView.dequeue(FruitCollectionViewCell.self, for: indexPath).configure(with: item)
     }

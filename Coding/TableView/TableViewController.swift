@@ -46,7 +46,9 @@ extension TableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let item = viewModel.items[safe: indexPath.row] else {
-            return UITableViewCell()
+            let cell = UITableViewCell()
+            cell.contentView.backgroundColor = .red
+            return cell
         }
         return tableView.dequeueReusableCell(for: FruitTableViewCell.self, for: indexPath).configure(with: item)
     }
