@@ -31,10 +31,6 @@ class TableViewController: UIViewController {
         tableView.reloadData()
     }
     
-    @IBAction func backAction(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
     // MARK: - Private methods
     
     func tableViewSetup() {

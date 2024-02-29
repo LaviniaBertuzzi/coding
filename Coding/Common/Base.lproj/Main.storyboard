@@ -76,14 +76,14 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Vai alla TableView"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Vai alla CollectionView"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="backAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppe-jZ-7mP"/>
+                                    <segue destination="D75-h2-fiR" kind="show" id="hBX-9E-3Y8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2176" y="4"/>
+            <point key="canvasLocation" x="1273" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BE9-EM-mZF">
@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="D75-h2-fiR" kind="relationship" relationship="rootViewController" id="CaM-nd-x8c"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sgR-67-Ihw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EB-GL-PSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,14 +175,14 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Vai alla CollectionView"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Vai alla TableView"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="k2M-bY-f1e"/>
+                                    <action selector="backAction:" destination="D75-h2-fiR" eventType="touchUpInside" id="g7j-xn-NeF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTj-dz-X37" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1317" y="4"/>
+            <point key="canvasLocation" x="2132" y="4"/>
         </scene>
     </scenes>
     <resources>
